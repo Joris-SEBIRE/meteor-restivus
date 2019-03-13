@@ -3,11 +3,11 @@
 ## [v0.8.12] - 2017-01-23
 
 #### Added
-- Support for SHA-256 hashed passwords sent from client in the [default login endpoint](https://github.com/kahmali/meteor-restivus#logging-in)
-- [PATCH support](https://github.com/kahmali/meteor-restivus#patch) for default collection endpoints 
+- Support for SHA-256 hashed passwords sent from client in the [default login endpoint](https://github.com/Joris-SEBIRE/meteor-restivus#logging-in)
+- [PATCH support](https://github.com/Joris-SEBIRE/meteor-restivus#patch) for default collection endpoints 
 
 #### Changed
-- Allow custom error responses to be returned from [custom auth functions](https://github.com/kahmali/meteor-restivus#auth) by providing an `error` value in return object
+- Allow custom error responses to be returned from [custom auth functions](https://github.com/Joris-SEBIRE/meteor-restivus#auth) by providing an `error` value in return object
 
 #### Fixed 
 - Bcrypt build error (required upgrade of `accounts-password` dependency to v1.3.3)
@@ -163,11 +163,11 @@ _Note: API-breaking changes are in **bold**_
 
 #### Added
 - Include an endpoint's configuration options [in its context]
-  (https://github.com/kahmali/meteor-restivus#thisendpointoption)
-- Allow [default response headers](https://github.com/kahmali/meteor-restivus#defaultheaders) to be 
+  (https://github.com/Joris-SEBIRE/meteor-restivus#thisendpointoption)
+- Allow [default response headers](https://github.com/Joris-SEBIRE/meteor-restivus#defaultheaders) to be 
   configured
 - Allow CORS to be disabled in API config (using [`enableCors`]
-  (https://github.com/kahmali/meteor-restivus#enablecors) option)
+  (https://github.com/Joris-SEBIRE/meteor-restivus#enablecors) option)
     - Resolves Issue [#39][]
     
 #### Changed
@@ -184,7 +184,7 @@ _Note: API-breaking changes are in **bold**_
 ## [v0.6.4] - 2015-04-14
 
 #### Added
-- [Configuration option](https://github.com/kahmali/meteor-restivus#useclientrouter) to disable Iron
+- [Configuration option](https://github.com/Joris-SEBIRE/meteor-restivus#useclientrouter) to disable Iron
   Router on the client (resolves Issue [#24][])
 
 #### Changed
@@ -195,7 +195,7 @@ _Note: API-breaking changes are in **bold**_
 ## [v0.6.3] - 2015-04-03
 
 #### Fixed
-- Issue [#20][]: Allow [manual response](https://github.com/kahmali/meteor-restivus#thisresponse) in
+- Issue [#20][]: Allow [manual response](https://github.com/Joris-SEBIRE/meteor-restivus#thisresponse) in
   endpoints using underlying [Node response object](https://nodejs.org/api/http.html#http_class_http_serverresponse).
 
 
@@ -378,73 +378,73 @@ _Note: API-breaking changes are in **bold**_
 
 
 
-[v0.8.12]:  https://github.com/kahmali/meteor-restivus/compare/v0.8.11...v0.8.12  "Version 0.8.12"
-[v0.8.11]:  https://github.com/kahmali/meteor-restivus/compare/v0.8.10...v0.8.11  "Version 0.8.11"
-[v0.8.10]:  https://github.com/kahmali/meteor-restivus/compare/v0.8.9...v0.8.10   "Version 0.8.10"
-[v0.8.9]:   https://github.com/kahmali/meteor-restivus/compare/v0.8.8...v0.8.9    "Version 0.8.9"
-[v0.8.8]:   https://github.com/kahmali/meteor-restivus/compare/v0.8.7...v0.8.8    "Version 0.8.8"
-[v0.8.7]:   https://github.com/kahmali/meteor-restivus/compare/v0.8.6...v0.8.7    "Version 0.8.7"
-[v0.8.6]:   https://github.com/kahmali/meteor-restivus/compare/v0.8.5...v0.8.6    "Version 0.8.6"
-[v0.8.5]:   https://github.com/kahmali/meteor-restivus/compare/v0.8.4...v0.8.5    "Version 0.8.5"
-[v0.8.4]:   https://github.com/kahmali/meteor-restivus/compare/v0.8.3...v0.8.4    "Version 0.8.4"
-[v0.8.3]:   https://github.com/kahmali/meteor-restivus/compare/v0.8.2...v0.8.3    "Version 0.8.3"
-[v0.8.2]:   https://github.com/kahmali/meteor-restivus/compare/v0.8.1...v0.8.2    "Version 0.8.2"
-[v0.8.1]:   https://github.com/kahmali/meteor-restivus/compare/v0.8.0...v0.8.1    "Version 0.8.1"
-[v0.8.0]:   https://github.com/kahmali/meteor-restivus/compare/v0.7.1...v0.8.0    "Version 0.8.0"
-[v0.7.1]:   https://github.com/kahmali/meteor-restivus/compare/v0.7.0...v0.7.1    "Version 0.7.1"
-[v0.7.0]:   https://github.com/kahmali/meteor-restivus/compare/v0.6.6...v0.7.0    "Version 0.7.0"
-[v0.6.6]:   https://github.com/kahmali/meteor-restivus/compare/v0.6.5...v0.6.6    "Version 0.6.6"
-[v0.6.5]:   https://github.com/kahmali/meteor-restivus/compare/v0.6.4...v0.6.5    "Version 0.6.5"
-[v0.6.4]:   https://github.com/kahmali/meteor-restivus/compare/v0.6.3...v0.6.4    "Version 0.6.4"
-[v0.6.3]:   https://github.com/kahmali/meteor-restivus/compare/v0.6.2...v0.6.3    "Version 0.6.3"
-[v0.6.2]:   https://github.com/kahmali/meteor-restivus/compare/v0.6.1...v0.6.2    "Version 0.6.2"
-[v0.6.1]:   https://github.com/kahmali/meteor-restivus/compare/v0.6.0...v0.6.1    "Version 0.6.1"
-[v0.6.0]:   https://github.com/kahmali/meteor-restivus/compare/v0.5.9...v0.6.0    "Version 0.6.0"
-[v0.5.9]:   https://github.com/kahmali/meteor-restivus/compare/v0.5.8...v0.5.9    "Version 0.5.9"
-[v0.5.8]:   https://github.com/kahmali/meteor-restivus/compare/v0.5.7...v0.5.8    "Version 0.5.8"
-[v0.5.7]:   https://github.com/kahmali/meteor-restivus/compare/v0.5.6...v0.5.7    "Version 0.5.7"
-[v0.5.6]:   https://github.com/kahmali/meteor-restivus/compare/v0.5.5...v0.5.6    "Version 0.5.6"
-[v0.5.5]:   https://github.com/kahmali/meteor-restivus/compare/v0.5.4...v0.5.5    "Version 0.5.5"
-[v0.5.4]:   https://github.com/kahmali/meteor-restivus/compare/v0.5.3...v0.5.4    "Version 0.5.4"
-[v0.5.3]:   https://github.com/kahmali/meteor-restivus/compare/v0.5.2...v0.5.3    "Version 0.5.3"
-[v0.5.2]:   https://github.com/kahmali/meteor-restivus/compare/v0.5.1...v0.5.2    "Version 0.5.2"
-[v0.5.1]:   https://github.com/kahmali/meteor-restivus/compare/v0.5.0...v0.5.1    "Version 0.5.1"
-[v0.5.0]:   https://github.com/kahmali/meteor-restivus/compare/d4ae97...v0.5.0    "Version 0.5.0"
+[v0.8.12]:  https://github.com/Joris-SEBIRE/meteor-restivus/compare/v0.8.11...v0.8.12  "Version 0.8.12"
+[v0.8.11]:  https://github.com/Joris-SEBIRE/meteor-restivus/compare/v0.8.10...v0.8.11  "Version 0.8.11"
+[v0.8.10]:  https://github.com/Joris-SEBIRE/meteor-restivus/compare/v0.8.9...v0.8.10   "Version 0.8.10"
+[v0.8.9]:   https://github.com/Joris-SEBIRE/meteor-restivus/compare/v0.8.8...v0.8.9    "Version 0.8.9"
+[v0.8.8]:   https://github.com/Joris-SEBIRE/meteor-restivus/compare/v0.8.7...v0.8.8    "Version 0.8.8"
+[v0.8.7]:   https://github.com/Joris-SEBIRE/meteor-restivus/compare/v0.8.6...v0.8.7    "Version 0.8.7"
+[v0.8.6]:   https://github.com/Joris-SEBIRE/meteor-restivus/compare/v0.8.5...v0.8.6    "Version 0.8.6"
+[v0.8.5]:   https://github.com/Joris-SEBIRE/meteor-restivus/compare/v0.8.4...v0.8.5    "Version 0.8.5"
+[v0.8.4]:   https://github.com/Joris-SEBIRE/meteor-restivus/compare/v0.8.3...v0.8.4    "Version 0.8.4"
+[v0.8.3]:   https://github.com/Joris-SEBIRE/meteor-restivus/compare/v0.8.2...v0.8.3    "Version 0.8.3"
+[v0.8.2]:   https://github.com/Joris-SEBIRE/meteor-restivus/compare/v0.8.1...v0.8.2    "Version 0.8.2"
+[v0.8.1]:   https://github.com/Joris-SEBIRE/meteor-restivus/compare/v0.8.0...v0.8.1    "Version 0.8.1"
+[v0.8.0]:   https://github.com/Joris-SEBIRE/meteor-restivus/compare/v0.7.1...v0.8.0    "Version 0.8.0"
+[v0.7.1]:   https://github.com/Joris-SEBIRE/meteor-restivus/compare/v0.7.0...v0.7.1    "Version 0.7.1"
+[v0.7.0]:   https://github.com/Joris-SEBIRE/meteor-restivus/compare/v0.6.6...v0.7.0    "Version 0.7.0"
+[v0.6.6]:   https://github.com/Joris-SEBIRE/meteor-restivus/compare/v0.6.5...v0.6.6    "Version 0.6.6"
+[v0.6.5]:   https://github.com/Joris-SEBIRE/meteor-restivus/compare/v0.6.4...v0.6.5    "Version 0.6.5"
+[v0.6.4]:   https://github.com/Joris-SEBIRE/meteor-restivus/compare/v0.6.3...v0.6.4    "Version 0.6.4"
+[v0.6.3]:   https://github.com/Joris-SEBIRE/meteor-restivus/compare/v0.6.2...v0.6.3    "Version 0.6.3"
+[v0.6.2]:   https://github.com/Joris-SEBIRE/meteor-restivus/compare/v0.6.1...v0.6.2    "Version 0.6.2"
+[v0.6.1]:   https://github.com/Joris-SEBIRE/meteor-restivus/compare/v0.6.0...v0.6.1    "Version 0.6.1"
+[v0.6.0]:   https://github.com/Joris-SEBIRE/meteor-restivus/compare/v0.5.9...v0.6.0    "Version 0.6.0"
+[v0.5.9]:   https://github.com/Joris-SEBIRE/meteor-restivus/compare/v0.5.8...v0.5.9    "Version 0.5.9"
+[v0.5.8]:   https://github.com/Joris-SEBIRE/meteor-restivus/compare/v0.5.7...v0.5.8    "Version 0.5.8"
+[v0.5.7]:   https://github.com/Joris-SEBIRE/meteor-restivus/compare/v0.5.6...v0.5.7    "Version 0.5.7"
+[v0.5.6]:   https://github.com/Joris-SEBIRE/meteor-restivus/compare/v0.5.5...v0.5.6    "Version 0.5.6"
+[v0.5.5]:   https://github.com/Joris-SEBIRE/meteor-restivus/compare/v0.5.4...v0.5.5    "Version 0.5.5"
+[v0.5.4]:   https://github.com/Joris-SEBIRE/meteor-restivus/compare/v0.5.3...v0.5.4    "Version 0.5.4"
+[v0.5.3]:   https://github.com/Joris-SEBIRE/meteor-restivus/compare/v0.5.2...v0.5.3    "Version 0.5.3"
+[v0.5.2]:   https://github.com/Joris-SEBIRE/meteor-restivus/compare/v0.5.1...v0.5.2    "Version 0.5.2"
+[v0.5.1]:   https://github.com/Joris-SEBIRE/meteor-restivus/compare/v0.5.0...v0.5.1    "Version 0.5.1"
+[v0.5.0]:   https://github.com/Joris-SEBIRE/meteor-restivus/compare/d4ae97...v0.5.0    "Version 0.5.0"
 
-[quick start]:                   https://github.com/kahmali/meteor-restivus#quick-start                 "Quick Start"
-[defining routes]:               https://github.com/kahmali/meteor-restivus#defining-custom-routes      "Defining Custom Routes"
-[defining collection routes]:    https://github.com/kahmali/meteor-restivus#defining-routes             "Defining Collection Routes"
-[configuration options]:         https://github.com/kahmali/meteor-restivus#configuration-options       "Configuration Options"
-[endpoint context]:              https://github.com/kahmali/meteor-restivus#endpoint-context            "Endpoint Context"
-[defining endpoints]:            https://github.com/kahmali/meteor-restivus#defining-endpoints          "Defining Endpoints"
-[route options]:                 https://github.com/kahmali/meteor-restivus#route-options               "Route Options"
-[versioning an api]:             https://github.com/kahmali/meteor-restivus#versioning-an-api           "Versioning an API"
+[quick start]:                   https://github.com/Joris-SEBIRE/meteor-restivus#quick-start                 "Quick Start"
+[defining routes]:               https://github.com/Joris-SEBIRE/meteor-restivus#defining-custom-routes      "Defining Custom Routes"
+[defining collection routes]:    https://github.com/Joris-SEBIRE/meteor-restivus#defining-routes             "Defining Collection Routes"
+[configuration options]:         https://github.com/Joris-SEBIRE/meteor-restivus#configuration-options       "Configuration Options"
+[endpoint context]:              https://github.com/Joris-SEBIRE/meteor-restivus#endpoint-context            "Endpoint Context"
+[defining endpoints]:            https://github.com/Joris-SEBIRE/meteor-restivus#defining-endpoints          "Defining Endpoints"
+[route options]:                 https://github.com/Joris-SEBIRE/meteor-restivus#route-options               "Route Options"
+[versioning an api]:             https://github.com/Joris-SEBIRE/meteor-restivus#versioning-an-api           "Versioning an API"
 [jsend]:                         http://labs.omniti.com/labs/jsend                                      "JSend REST API Standard"
-[#1]:                            https://github.com/kahmali/meteor-restivus/issues/1                    "Issue #1"
-[#2]:                            https://github.com/kahmali/meteor-restivus/issues/2                    "Issue #2"
-[#14]:                           https://github.com/kahmali/meteor-restivus/issues/14                   "Issue #14"
-[#20]:                           https://github.com/kahmali/meteor-restivus/issues/20                   "Issue #20"
-[#24]:                           https://github.com/kahmali/meteor-restivus/issues/24                   "Issue #24"
-[#32]:                           https://github.com/kahmali/meteor-restivus/issues/32                   "Issue #32"
-[#35]:                           https://github.com/kahmali/meteor-restivus/issues/35                   "Issue #35"
-[#38]:                           https://github.com/kahmali/meteor-restivus/issues/38                   "Issue #38"
-[#39]:                           https://github.com/kahmali/meteor-restivus/issues/39                   "Issue #39"
-[#43]:                           https://github.com/kahmali/meteor-restivus/issues/43                   "Issue #43"
-[#47]:                           https://github.com/kahmali/meteor-restivus/issues/47                   "Issue #47"
-[#48]:                           https://github.com/kahmali/meteor-restivus/issues/48                   "Issue #48"
-[#49]:                           https://github.com/kahmali/meteor-restivus/issues/49                   "Issue #49"
-[#68]:                           https://github.com/kahmali/meteor-restivus/issues/68                   "Issue #68"
-[#78]:                           https://github.com/kahmali/meteor-restivus/issues/78                   "Issue #78"
-[#79]:                           https://github.com/kahmali/meteor-restivus/issues/79                   "Issue #79"
-[#81]:                           https://github.com/kahmali/meteor-restivus/issues/81                   "Issue #81"
-[#91]:                           https://github.com/kahmali/meteor-restivus/issues/91                   "Issue #91"
-[#99]:                           https://github.com/kahmali/meteor-restivus/issues/99                   "Issue #99"
-[#118]:                          https://github.com/kahmali/meteor-restivus/issues/118                  "Issue #118"
-[#121]:                          https://github.com/kahmali/meteor-restivus/issues/121                  "Issue #121"
-[#135]:                          https://github.com/kahmali/meteor-restivus/issues/135                  "Issue #135"
-[#169]:                          https://github.com/kahmali/meteor-restivus/issues/169                  "Issue #169"
-[#170]:                          https://github.com/kahmali/meteor-restivus/issues/170                  "Issue #170"
-[#179]:                          https://github.com/kahmali/meteor-restivus/issues/179                  "Issue #179"
-[#185]:                          https://github.com/kahmali/meteor-restivus/issues/185                  "Issue #185"
-[#194]:                          https://github.com/kahmali/meteor-restivus/issues/194                  "Issue #194"
-[#196]:                          https://github.com/kahmali/meteor-restivus/pull/196                    "PR #196"
+[#1]:                            https://github.com/Joris-SEBIRE/meteor-restivus/issues/1                    "Issue #1"
+[#2]:                            https://github.com/Joris-SEBIRE/meteor-restivus/issues/2                    "Issue #2"
+[#14]:                           https://github.com/Joris-SEBIRE/meteor-restivus/issues/14                   "Issue #14"
+[#20]:                           https://github.com/Joris-SEBIRE/meteor-restivus/issues/20                   "Issue #20"
+[#24]:                           https://github.com/Joris-SEBIRE/meteor-restivus/issues/24                   "Issue #24"
+[#32]:                           https://github.com/Joris-SEBIRE/meteor-restivus/issues/32                   "Issue #32"
+[#35]:                           https://github.com/Joris-SEBIRE/meteor-restivus/issues/35                   "Issue #35"
+[#38]:                           https://github.com/Joris-SEBIRE/meteor-restivus/issues/38                   "Issue #38"
+[#39]:                           https://github.com/Joris-SEBIRE/meteor-restivus/issues/39                   "Issue #39"
+[#43]:                           https://github.com/Joris-SEBIRE/meteor-restivus/issues/43                   "Issue #43"
+[#47]:                           https://github.com/Joris-SEBIRE/meteor-restivus/issues/47                   "Issue #47"
+[#48]:                           https://github.com/Joris-SEBIRE/meteor-restivus/issues/48                   "Issue #48"
+[#49]:                           https://github.com/Joris-SEBIRE/meteor-restivus/issues/49                   "Issue #49"
+[#68]:                           https://github.com/Joris-SEBIRE/meteor-restivus/issues/68                   "Issue #68"
+[#78]:                           https://github.com/Joris-SEBIRE/meteor-restivus/issues/78                   "Issue #78"
+[#79]:                           https://github.com/Joris-SEBIRE/meteor-restivus/issues/79                   "Issue #79"
+[#81]:                           https://github.com/Joris-SEBIRE/meteor-restivus/issues/81                   "Issue #81"
+[#91]:                           https://github.com/Joris-SEBIRE/meteor-restivus/issues/91                   "Issue #91"
+[#99]:                           https://github.com/Joris-SEBIRE/meteor-restivus/issues/99                   "Issue #99"
+[#118]:                          https://github.com/Joris-SEBIRE/meteor-restivus/issues/118                  "Issue #118"
+[#121]:                          https://github.com/Joris-SEBIRE/meteor-restivus/issues/121                  "Issue #121"
+[#135]:                          https://github.com/Joris-SEBIRE/meteor-restivus/issues/135                  "Issue #135"
+[#169]:                          https://github.com/Joris-SEBIRE/meteor-restivus/issues/169                  "Issue #169"
+[#170]:                          https://github.com/Joris-SEBIRE/meteor-restivus/issues/170                  "Issue #170"
+[#179]:                          https://github.com/Joris-SEBIRE/meteor-restivus/issues/179                  "Issue #179"
+[#185]:                          https://github.com/Joris-SEBIRE/meteor-restivus/issues/185                  "Issue #185"
+[#194]:                          https://github.com/Joris-SEBIRE/meteor-restivus/issues/194                  "Issue #194"
+[#196]:                          https://github.com/Joris-SEBIRE/meteor-restivus/pull/196                    "PR #196"

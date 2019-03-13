@@ -1,4 +1,4 @@
-# Restivus [v0.8.12](https://github.com/kahmali/meteor-restivus/blob/devel/CHANGELOG.md#change-log) [![Build Status](https://travis-ci.org/kahmali/meteor-restivus.svg)](https://travis-ci.org/kahmali/meteor-restivus)
+# Restivus [v0.8.12](https://github.com/Joris-SEBIRE/meteor-restivus/blob/devel/CHANGELOG.md#change-log) [![Build Status](https://travis-ci.org/Joris-SEBIRE/meteor-restivus.svg)](https://travis-ci.org/Joris-SEBIRE/meteor-restivus)
 
 #### REST APIs for the Best of Us!
 
@@ -68,7 +68,7 @@ and is built on top of [Simple JSON Routes][json-routes] to provide:
 
 You can install Restivus using Meteor's package manager:
 ```bash
-> meteor add nimble:restivus
+> meteor add zayy:restivus
 ```
 
 ## Quick Start
@@ -1048,7 +1048,7 @@ All responses contain the following defaults, which will be overridden with any 
     - This is a [CORS-compliant header][cors] that allows requests to be made to the API from any
       domain. Without this, requests from within the browser would only be allowed from the same
       domain the API is hosted on, which is typically not the intended behavior. This can be
-      [disabled by default](https://github.com/kahmali/meteor-restivus#enablecors), or also by
+      [disabled by default](https://github.com/Joris-SEBIRE/meteor-restivus#enablecors), or also by
       returning a header of the same name with a domain specified (usually the domain the API is
       being hosted on).
 
@@ -1225,17 +1225,17 @@ curl -H "X-Auth-Token: f2KpRW7KeN9aPmjSZ" -H "X-User-Id: fbdpsNf4oHiX79vMJ" http
 
 To update Restivus to the latest version:
 ```bash
-> meteor update nimble:restivus
+> meteor update zayy:restivus
 ```
 
 Or to update Restivus to a specific version:
 ```bash
-> meteor add nimble:restivus@=<version_number>
+> meteor add zayy:restivus@=<version_number>
 ```
 
 For example, to update restivus to v0.7.0:
 ```bash
-> meteor add nimble:restivus@=0.7.0
+> meteor add zayy:restivus@=0.7.0
 ```
 
 Please check the [change log][restivus-change-log] before updating, for more information about the
@@ -1283,9 +1283,9 @@ This update makes it possible to [maintain multiple versions of an API](#version
 One other significant (but not API-breaking) change is that [`iron:router`][iron-router] has been
 replaced by [`simple:json-routes`][json-routes] as the server-side router for Restivus. This means
 that Restivus should no longer [interfere with other routers]
-(https://github.com/kahmali/meteor-restivus/issues/24) (client _or_ server), or do other [annoying]
-(https://github.com/kahmali/meteor-restivus/issues/35) [things]
-(https://github.com/kahmali/meteor-restivus/issues/43). Special thanks to [Sashko Stubailo]
+(https://github.com/Joris-SEBIRE/meteor-restivus/issues/24) (client _or_ server), or do other [annoying]
+(https://github.com/Joris-SEBIRE/meteor-restivus/issues/35) [things]
+(https://github.com/Joris-SEBIRE/meteor-restivus/issues/43). Special thanks to [Sashko Stubailo]
 (https://github.com/stubailo) for his work on `simple:json-routes`, and for handling the conversion
 from `iron:router` to `simple:json-routes` in Restivus!
 
@@ -1296,7 +1296,7 @@ Some other notable changes are:
 - More accurate response codes returned in API
 
 For a complete list of changes, check out the [change log]
-(https://github.com/kahmali/meteor-restivus/blob/devel/CHANGELOG.md#v080---2015-07-06).
+(https://github.com/Joris-SEBIRE/meteor-restivus/blob/devel/CHANGELOG.md#v080---2015-07-06).
 
 ## Upgrading to 0.7.0
 
@@ -1333,12 +1333,12 @@ with that comes a few API-breaking changes:
 ## Change Log
 
 A detailed list of the changes between versions can be found in the [change log]
-(https://github.com/kahmali/meteor-restivus/blob/master/CHANGELOG.md).
+(https://github.com/Joris-SEBIRE/meteor-restivus/blob/master/CHANGELOG.md).
 
 ## Contributing
 
 Contributions to Restivus are welcome and appreciated! If you're interested in contributing, please
-check out [the guidelines](https://github.com/kahmali/meteor-restivus/blob/master/CONTRIBUTING.md)
+check out [the guidelines](https://github.com/Joris-SEBIRE/meteor-restivus/blob/master/CONTRIBUTING.md)
 before getting started.
 
 ## Thanks
@@ -1355,7 +1355,7 @@ Also, thanks to the following projects, which RestStop2 was inspired by:
 
 ## License
 
-MIT License. See [LICENSE](https://github.com/kahmali/meteor-restivus/blob/master/LICENSE) for
+MIT License. See [LICENSE](https://github.com/Joris-SEBIRE/meteor-restivus/blob/master/LICENSE) for
 details.
 
 
@@ -1367,7 +1367,7 @@ details.
 [json-routes]:          https://github.com/stubailo/meteor-rest/tree/master/packages/json-routes  "Simple JSON Routes"
 [node-request]:         https://nodejs.org/api/http.html#http_http_incomingmessage                 "Node Request Object Docs"
 [node-response]:        https://nodejs.org/api/http.html#http_class_http_serverresponse            "Node Response Object Docs"
-[restivus-change-log]:  https://github.com/kahmali/meteor-restivus/blob/master/CHANGELOG.md       "Restivus Change Log"
-[restivus-issues]:      https://github.com/kahmali/meteor-restivus/issues                         "Restivus Issues"
+[restivus-change-log]:  https://github.com/Joris-SEBIRE/meteor-restivus/blob/master/CHANGELOG.md       "Restivus Change Log"
+[restivus-issues]:      https://github.com/Joris-SEBIRE/meteor-restivus/issues                         "Restivus Issues"
 [reststop2]:            https://github.com/Differential/reststop2                                 "RestStop2"
 [reststop2-docs]:       http://github.differential.com/reststop2/                                 "RestStop2 Docs"
